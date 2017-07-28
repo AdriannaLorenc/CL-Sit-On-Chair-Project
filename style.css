@@ -1,0 +1,374 @@
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url("./font/raleway-regular.woff2") format('woff2'),
+         url("./font/raleway-regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*HEADER*/
+*{
+  font-family: ralewayregular;
+}
+
+.container{
+ width: 100%;
+}
+
+.container > div, .container > nav{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+ header{
+   height: 40px;
+   color: white;
+   background-color: black;
+ }
+
+nav .left{
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+nav .left span{
+color: #2ed3b5;
+}
+
+nav .right{
+  float: right;
+}
+
+nav a{
+  display: inline-block;
+  padding: 0 0 0 50px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+/*SECTION 1 */
+.container.slider{
+  height: 505px;
+  background-color: background: #ffffff; /* Old browsers */
+background: -webkit-linear-gradient(#ffffff 0%, #cfcfcf 100%);
+background: -o-linear-gradient(#ffffff 0%, #cfcfcf 100%);
+background: linear-gradient(#ffffff 0%, #cfcfcf 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfcfcf',GradientType=0 ); /* IE6-9 */
+display: flex;
+}
+
+.slider .row{
+display: flex;
+}
+
+.slider .arrow{
+  width: 32px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #2ed3b5;
+  font-size: 80px;
+}
+
+.slider .row .center{
+flex-grow: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.center .image{
+  min-width: 450px;
+}
+.center .text{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title span {
+  color: #2ed3b5;
+}
+
+.title h1{
+  margin: 40px;
+  font-size: 40px;
+}
+ .slider .button{
+   margin-top: 35px;
+   display:block;
+  border: 1px solid #2ed3b5;
+  background-color: #2ed3b5;
+  color: white;
+  border-radius: 5px;
+  padding:15px;
+position: relative;}
+
+/*SECTOR 2*/
+.container.photos > div{
+  display: flex;
+  margin-top: 30px;
+}
+
+.photos .box{
+  border: 1px solid #cacaca;
+  height: 225px;
+  flex: 1;
+  margin-right: 30px;
+  position: relative;
+}
+
+.photos .box img{
+  width: 100%;
+  height: 100%;
+}
+
+.box.box3{
+  padding: 15px;
+}
+
+.box.box3 p{
+  color: #8e8e8e;
+  font-size: 14px;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+.box.box3 p:first-of-type{
+  color: black;
+  border-bottom: 7px solid #2ed3b5;
+  width: 50%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.shadow{
+  position: absolute;
+  bottom: 15px;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.shadow span{
+  border-bottom: 7px solid #2ed3b5;
+  display: inline-block;
+  width: 140px;
+}
+
+.container.pricelist {
+  margin-top: 35px;
+  height: 725px;
+  background-color: #f1f1f1;
+}
+
+.pricelist .header span, .container .header span{
+  margin-top: 45px;
+  border-bottom: 7px solid #2ed3b5;
+  display: inline-block;
+  width: 140px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.pricelist .square{
+  width: 325px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  margin-top: 75px;
+  border: 2px solid #c2c2c2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.square:hover{
+  background-color: #2ed3b5;
+}
+
+.footer a:hover{
+  background-color: white;
+  color: #2ed3b5;
+}
+
+.square:hover .M{
+  color: white;
+}
+
+.square:hover .circle.bottom{
+  background-color: white;
+  color:#2ed3b5;
+}
+
+.square:hover .hover{
+  background-color: white;
+  color: #2ed3b5;
+}
+
+.square:hover .circle.top{
+  background-color: #2ed3b5;
+}
+
+.pricelist .circle.top{
+  height: 46px;
+  width: 46px;
+  border-radius: 100%;
+  border: 9px solid white;
+  position: absolute;
+  top: -35px;
+  left: 135px;
+  background-color: #c2c2c2;
+  box-shadow: 0 0 0 2px #c2c2c2;
+}
+
+.pricelist .tabs{
+  display: flex;
+}
+
+.pricelist .title{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 26px;
+
+}
+
+.pricelist .title span{
+   color: #2ed3b5;
+   text-align: center;
+}
+
+.pricelist .circle.bottom{
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 2px solid #c2c2c2;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #c2c2c2;
+}
+
+.pricelist .circle.bottom span:first-of-type{
+  font-size: 45px;
+}
+
+.pricelist .circle.bottom span:last-of-type{
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.pricelist .circle.bottom p{
+  font-size: 16px;
+}
+
+.pricelist ul li{
+  line-height: 25px;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.pricelist ul li:nth-child(even){
+background-color: #f1f1f1;
+}
+
+.pricelist ul li:nth-child(odd){
+background-color: #e4e4e4;
+}
+
+.pricelist .footer{
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.pricelist .footer a{
+  background-color: #2ed3b5;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: : 0 auto;
+  padding: 10px 27px 9px;
+  text-align: center;
+  display: inline-block;
+}
+.container.section3 .row {
+  display:flex;
+}
+
+.section3 input:nth-of-type(3) {
+  width: 100%;
+  height:180px;
+  resize: none;
+}
+
+.container.section3 .header{
+  display: flex;
+}
+
+.container .form{
+  flex-grow: 3;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+  line-height: 40px;
+}
+
+.container input{
+padding: 13px;
+width: 100%;
+margin-top: 10px;
+border: 1px solid #cacaca;
+}
+
+.container .wrapper{;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .middle{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.red{
+  margin: auto;
+}
+
+.Btn{
+  background-color: #2ed3b5;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  width: 250px;
+}
+
+.flex{
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50%;
+  padding-left: 50px;
+}
